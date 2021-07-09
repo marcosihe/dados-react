@@ -1,0 +1,11 @@
+.centerPosition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.endPosition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

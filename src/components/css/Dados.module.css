@@ -1,0 +1,19 @@
+.diceCircle {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    margin: 1rem;
+}
+
+.circlesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    background-color: rgb(216, 206, 206);
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+}
