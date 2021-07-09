@@ -1,0 +1,46 @@
+.predictionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 5px;
+    background-color: blueviolet;
+    margin-bottom: 1rem;
+}
+
+.btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    height: 5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 0.5em;
+    height: 1em;
+}
+
+.liOptions {
+    list-style: none;
+}
+
+.btnOptions {
+    background-color: #009933;
+    border: none;
+    color: whitesmoke;
+    padding: 0.9em 1.8em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5em;
+  }
+  
+  .btnOptions:hover {
+      background-color: #fa4d09;
+      box-shadow: 0 0 12px rgb(58, 54, 54, .5);
+  }
