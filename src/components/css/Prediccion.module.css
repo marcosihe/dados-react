@@ -44,3 +44,8 @@ h3 {
       background-color: #fa4d09;
       box-shadow: 0 0 12px rgb(58, 54, 54, .5);
   }
+
+  .selectedButton {
+    background-color: #fa4d09;
+    box-shadow: 0 0 12px rgb(58, 54, 54, .5);
+}

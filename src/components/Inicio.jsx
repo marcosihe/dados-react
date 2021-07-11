@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./css/Inicio.module.css";
 import Dado from './Dado';
-import Predicion from "./Predicion";
+import Prediccion from "./Prediccion";
 
 const Inicio = () => {
 
@@ -38,10 +38,10 @@ const Inicio = () => {
         <Dado diceNumber ={diceNumber}/>
       </section>
       <section className={styles.btnContainer}>
-      <Predicion prediction={prediction}/>
+      <Prediccion prediction={prediction} chosenNumber={chosenNumber}/>
       </section>
       <section>
-        {showAlert? alert("ganaste") : null}
+        {showAlert? ( setTimeout(function(){alert("ganaste")},1200)) : null}
       </section>
     </main>
   );

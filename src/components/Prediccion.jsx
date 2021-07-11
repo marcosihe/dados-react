@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./css/Prediccion.module.css";
 
-const Predicion = (props) => {
+const Prediccion = (props) => {
   const numbersArray = [1, 2, 3, 4, 5, 6];
   const { prediction } = props;
  
@@ -27,4 +27,4 @@ const Predicion = (props) => {
   );
 };
 
-export default Predicion;
+export default Prediccion;
