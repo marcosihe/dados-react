@@ -25,7 +25,6 @@ const Inicio = () => {
 
   if(clickedPlayButton && (chosenNumber === diceNumber)){
     setClickedPlayButton(false);
-    console.log('im here');
     setShowAlert(true);
   }
   

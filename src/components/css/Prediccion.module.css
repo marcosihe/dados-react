@@ -48,4 +48,13 @@ h3 {
   .selectedButton {
     background-color: #fa4d09;
     box-shadow: 0 0 12px rgb(58, 54, 54, .5);
+    border: none;
+    color: whitesmoke;
+    padding: 0.9em 1.8em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5em;
 }
