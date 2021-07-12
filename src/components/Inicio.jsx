@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./css/Inicio.module.css";
 import Dado from './Dado';
 import Prediccion from "./Prediccion";
+import Alerta from "./Alerta";
 
 const Inicio = () => {
 
@@ -10,6 +11,7 @@ const Inicio = () => {
   const [clickedPlayButton, setClickedPlayButton] = useState(false);
   const [chosenNumber, setChosenNumber] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
+  
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ const Inicio = () => {
       <Prediccion prediction={prediction} chosenNumber={chosenNumber}/>
       </section>
       <section>
-        {showAlert? ( setTimeout(function(){alert("ganaste")},1200)) : null}
+        <Alerta showAlert={showAlert} chosenNumber={chosenNumber}/>
       </section>
     </main>
   );
