@@ -1,0 +1,33 @@
+.mainRules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.sectionRules {
+    background-color: rgb(168, 92, 240);
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+
+.rulesTitle {
+    text-align: center;
+    margin: 1rem;
+}
+
+.ulRules {
+    margin: 1rem;
+    list-style: none;
+}
+
+li {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .extraSectionRules {
+        width: 100%;
+        height: 4rem;
+    }
+}
