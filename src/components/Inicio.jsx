@@ -1,48 +1,53 @@
 import React, { useState } from "react";
 import styles from "./css/Inicio.module.css";
-import Dado from './Dado';
+import Dado from "./Dado";
 import Prediccion from "./Prediccion";
 import Alerta from "./Alerta";
 
 const Inicio = () => {
-
-  const randomNumber = () => Math.floor(Math.random() * 6 + 1)
+  const randomNumber = () => Math.floor(Math.random() * 6 + 1);
   const [diceNumber, setDiceNumber] = useState(1);
   const [clickedPlayButton, setClickedPlayButton] = useState(false);
   const [chosenNumber, setChosenNumber] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
-  
+  //const [predictionSelected, setPredictionSelected] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
     setDiceNumber(randomNumber());
     setClickedPlayButton(true);
-  }
+  };
+
   const prediction = (e) => {
     e.preventDefault();
     setChosenNumber(parseInt(e.target.id));
     setShowAlert(false);
     setClickedPlayButton(false);
-  }
+  };
 
-  if(clickedPlayButton && (chosenNumber === diceNumber)){
+  if (clickedPlayButton && chosenNumber === diceNumber) {
     setClickedPlayButton(false);
     setShowAlert(true);
   }
-  
+  console.log('desde inicio');
+
   return (
     <main>
       <section className={styles.btnContainer}>
-        <button className={styles.btnPlay} onClick={ handleClick }>¡Lanzar dado!</button>
+        <button className={styles.btnPlay} onClick={handleClick}>
+          ¡Lanzar dado!
+        </button>
       </section>
       <section className={styles.diceContainer}>
-        <Dado diceNumber ={diceNumber}/>
+        {<Dado diceNumber={diceNumber} />}
       </section>
       <section className={styles.btnContainer}>
-      <Prediccion prediction={prediction} chosenNumber={chosenNumber}/>
+        <Prediccion prediction={prediction} chosenNumber={chosenNumber} />
       </section>
       <section>
-        <Alerta showAlert={showAlert} chosenNumber={chosenNumber}/>
+        {showAlert ? (
+          <Alerta showAlert={showAlert} chosenNumber={chosenNumber} />
+        ) : null}
       </section>
     </main>
   );

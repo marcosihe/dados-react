@@ -10,6 +10,7 @@ const Prediccion = (props) => {
     },
     [props.chosenNumber]
   );
+  console.log("desde prediccion");
 
   return (
     <Fragment>

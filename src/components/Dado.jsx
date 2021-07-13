@@ -18,6 +18,7 @@ const Dado = (props) => {
   return (
     <div>
       {dices[props.diceNumber]}
+      {console.log('desde dado')}
     </div>
   );
 };
