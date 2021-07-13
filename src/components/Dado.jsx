@@ -18,9 +18,8 @@ const Dado = (props) => {
   return (
     <div>
       {dices[props.diceNumber]}
-      {console.log('desde dado')}
     </div>
   );
 };
 
-export default Dado;
+export default React.memo(Dado);

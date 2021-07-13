@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import styles from "./css/Inicio.module.css";
 import Dado from "./Dado";
 import Prediccion from "./Prediccion";
@@ -10,7 +10,6 @@ const Inicio = () => {
   const [clickedPlayButton, setClickedPlayButton] = useState(false);
   const [chosenNumber, setChosenNumber] = useState(null);
   const [showAlert, setShowAlert] = useState(false);
-  //const [predictionSelected, setPredictionSelected] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -18,18 +17,17 @@ const Inicio = () => {
     setClickedPlayButton(true);
   };
 
-  const prediction = (e) => {
+  const prediction = useCallback( (e) => {
     e.preventDefault();
     setChosenNumber(parseInt(e.target.id));
     setShowAlert(false);
     setClickedPlayButton(false);
-  };
+  }, [] )
 
   if (clickedPlayButton && chosenNumber === diceNumber) {
     setClickedPlayButton(false);
     setShowAlert(true);
   }
-  console.log('desde inicio');
 
   return (
     <main>

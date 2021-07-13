@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import Swal from "sweetalert2";
 
 const Alerta = (props) => {
-  console.log("Desde alerta");
   const showMessage = () => {
     Swal.fire(
       "¡Ganaste! =D",

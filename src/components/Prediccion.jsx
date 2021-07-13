@@ -5,12 +5,12 @@ const Prediccion = (props) => {
   const numbersArray = [1, 2, 3, 4, 5, 6];
   const { prediction } = props;
   const [selectedButton, setSelectedButton] = useState(1);
+
   useEffect( () => {
       setSelectedButton(props.chosenNumber);
     },
     [props.chosenNumber]
   );
-  console.log("desde prediccion");
 
   return (
     <Fragment>
@@ -44,4 +44,4 @@ const Prediccion = (props) => {
   );
 };
 
-export default Prediccion;
+export default React.memo(Prediccion);
