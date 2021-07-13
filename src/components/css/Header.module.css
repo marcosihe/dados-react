@@ -49,6 +49,8 @@ nav{
 
 .link {
     margin: 0.4rem;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 a {
@@ -62,5 +64,8 @@ a:visited {
 }
 a:hover {
     color: #009933;
+}
 
+a:active {
+ background-color: rgb(209, 164, 164);
 }
