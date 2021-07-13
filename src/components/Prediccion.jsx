@@ -15,7 +15,7 @@ const Prediccion = (props) => {
   return (
     <Fragment>
       <section className={styles.predictionContainer}>
-        <h3>¿Qué número saldrá?</h3>
+        <h3 className={styles.predictionTitle}>¿Qué número saldrá?</h3>
         <ul className={styles.btnContainer}>
           {numbersArray.map((item, index) => (
             <li key={index + 1} className={styles.liOptions}>
