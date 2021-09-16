@@ -11,13 +11,13 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/dados-react">
           <Inicio />
         </Route>
-        <Route exact path="/reglas">
+        <Route exact path="dados-react/reglas">
           <Reglas />
         </Route>
-        <Route exact path="/*">
+        <Route exact path="/dados-react/*">
           <Error404 />
         </Route>
       </Switch>
