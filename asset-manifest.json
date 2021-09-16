@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dados-react/static/css/main.78995c9f.chunk.css",
-    "main.js": "/dados-react/static/js/main.25464969.chunk.js",
-    "main.js.map": "/dados-react/static/js/main.25464969.chunk.js.map",
+    "main.js": "/dados-react/static/js/main.a5a6d6ed.chunk.js",
+    "main.js.map": "/dados-react/static/js/main.a5a6d6ed.chunk.js.map",
     "runtime-main.js": "/dados-react/static/js/runtime-main.12285684.js",
     "runtime-main.js.map": "/dados-react/static/js/runtime-main.12285684.js.map",
     "static/js/2.98bcc36f.chunk.js": "/dados-react/static/js/2.98bcc36f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.12285684.js",
     "static/js/2.98bcc36f.chunk.js",
     "static/css/main.78995c9f.chunk.css",
-    "static/js/main.25464969.chunk.js"
+    "static/js/main.a5a6d6ed.chunk.js"
   ]
 }
