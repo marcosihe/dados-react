@@ -14,8 +14,8 @@ const Header = () => {
       </section>
       <nav>
         <ul className={styles.navigationUl}>
-          <Link className={styles.link} to="/">Jugar</Link>
-          <Link className={styles.link} to="/reglas">Reglas</Link>
+          <Link className={styles.link} to="/dados-react">Jugar</Link>
+          <Link className={styles.link} to="/dados-react/reglas">Reglas</Link>
         </ul>
       </nav>
     </header>
