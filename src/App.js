@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/dados-react">
           <Inicio />
         </Route>
-        <Route exact path="dados-react/reglas">
+        <Route exact path="/dados-react/reglas">
           <Reglas />
         </Route>
         <Route exact path="/dados-react/*">

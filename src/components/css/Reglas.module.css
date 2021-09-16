@@ -1,14 +1,15 @@
 .mainRules {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
 .sectionRules {
-    background-color: rgb(168, 92, 240);
+    background-color: rgb(146, 121, 170);
     border-radius: 15px;
     margin: 0.5rem;
+    max-width: 500px;
+
 }
 
 .rulesTitle {
@@ -23,11 +24,4 @@
 
 li {
     font-weight: bold;
-}
-
-@media (min-width: 600px) {
-    .extraSectionRules {
-        width: 100%;
-        height: 4rem;
-    }
 }
