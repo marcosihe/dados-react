@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dados-react/static/css/main.78995c9f.chunk.css",
+    "main.js": "/dados-react/static/js/main.25464969.chunk.js",
+    "main.js.map": "/dados-react/static/js/main.25464969.chunk.js.map",
+    "runtime-main.js": "/dados-react/static/js/runtime-main.12285684.js",
+    "runtime-main.js.map": "/dados-react/static/js/runtime-main.12285684.js.map",
+    "static/js/2.98bcc36f.chunk.js": "/dados-react/static/js/2.98bcc36f.chunk.js",
+    "static/js/2.98bcc36f.chunk.js.map": "/dados-react/static/js/2.98bcc36f.chunk.js.map",
+    "index.html": "/dados-react/index.html",
+    "static/css/main.78995c9f.chunk.css.map": "/dados-react/static/css/main.78995c9f.chunk.css.map",
+    "static/js/2.98bcc36f.chunk.js.LICENSE.txt": "/dados-react/static/js/2.98bcc36f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12285684.js",
+    "static/js/2.98bcc36f.chunk.js",
+    "static/css/main.78995c9f.chunk.css",
+    "static/js/main.25464969.chunk.js"
+  ]
+}
